@@ -16,46 +16,46 @@
         // Aplly default settings for missing settings
         var settings = $.extend({
             // Behaviour
-            loadingCount:200,        // Loaded rows at each loading (int)
-            allLoadingCount:1000,    // Loaded rows at each loading when all rows are loaded (int) 
-            loadingMargin:500,        // Margin before a new loading in pixels (int)
+            loadingCount:200,  		// Loaded rows at each loading (int)
+            allLoadingCount:1000,  	// Loaded rows at each loading when all rows are loaded (int) 
+            loadingMargin:500,      // Margin before a new loading in pixels (int)
             onLoad:null,            // Called function after each loading (function)
             onComplete:null,        // Called function when array is complete (function)
-            onClick:null,            // Called function when a row is clicked (function)
-            onSelect:null,            // Called function when a row is selected (function)
+            onClick:null,           // Called function when a row is clicked (function)
+            onSelect:null,          // Called function when a row is selected (function)
             onUnselect:null,        // Called function when a row is unselected (function)
-            onSelectAll:null,        // Called function when all rows are selected (function)
-            onUnselectAll:null,        // Called function when all rows are unselected (function) 
-            operationsChecker:null,    // Called function to check each operations (function)
+            onSelectAll:null,       // Called function when all rows are selected (function)
+            onUnselectAll:null,     // Called function when all rows are unselected (function) 
+            operationsChecker:null, // Called function to check each operations (function)
             
             // AJAX
-            postParameters:{},    // POST parameters send to JSON flow (map)
+            postParameters:{}, 	// POST parameters send to JSON flow (map)
             
             // Style
             arrayWidth:null,        // Array width in pixels or % (string)
             arrayHeight:400,        // Array height in pixels (int)
-            columnsStyles:null,        // Colums styles in CSS (string[])
-            columnsWidths:null,        // Columns widths in pixels or % (string[])
-            columsTruncates:null,    // Columns truncates in caracters (int[])
-            displayedColumns:null,    // Displayed columns indexes (int[])
-            onRender:null,            // Called function when a row is rendered (function)
+            columnsStyles:null,     // Colums styles in CSS (string[])
+            columnsWidths:null,     // Columns widths in pixels or % (string[])
+            columsTruncates:null,   // Columns truncates in caracters (int[])
+            displayedColumns:null,  // Displayed columns indexes (int[])
+            onRender:null,          // Called function when a row is rendered (function)
             
             // Selection
-            isSelectableRows:false,        // Enable selection on rows ? (bool)
-            isSelectionInputs:true,        // Display selection inputs ? (bool)
-            isAllRowsSelectable:false,    // Enable selection on all rows ? (bool)
-            isMultipleSelection:false,    // Enable multiple selection ? (bool)
+            isSelectableRows:false,     // Enable selection on rows ? (bool)
+            isSelectionInputs:true,     // Display selection inputs ? (bool)
+            isAllRowsSelectable:false,  // Enable selection on all rows ? (bool)
+            isMultipleSelection:false,  // Enable multiple selection ? (bool)
             isSelectionOnClick:true,    // Enable selection on click ? (bool)
-            isSelectionOnKeyboard:true,    // Enable selection on keyboard ?
+            isSelectionOnKeyboard:true,	// Enable selection on keyboard ?
             
             // Sort
-            isSortableColumns:false,    // Enable sort on columns ? (bool)
-            sortableColumns:null,        // Sortable columns indexes (int[])
-            defaultSortIndex:null,        // Default sort index (int)
-            defaultSortOrder:null,        // Default sort order, "asc" or "desc" (string)
+            isSortableColumns:false, // Enable sort on columns ? (bool)
+            sortableColumns:null,    // Sortable columns indexes (int[])
+            defaultSortIndex:null,   // Default sort index (int)
+            defaultSortOrder:null,   // Default sort order, "asc" or "desc" (string)
             
             // Messages
-            loadingMessage:'Loading...',    // Loading message (string)
+            loadingMessage:'Loading...',	// Loading message (string)
             noDataMessage:'No data',        // No data message (string)
             sortByMessage:'Sort by',        // Sort by message (string)
         }, settings);
