@@ -46,7 +46,7 @@
             isAllRowsSelectable:false,  // Enable selection on all rows ? (bool)
             isMultipleSelection:false,  // Enable multiple selection ? (bool)
             isSelectionOnClick:true,    // Enable selection on click ? (bool)
-            isSelectionOnKeyboard:true,    // Enable selection on keyboard ?
+            isSelectionOnKeyboard:true, // Enable selection on keyboard ?
             
             // Sort
             isSortableColumns:false, // Enable sort on columns ? (bool)
