@@ -16,8 +16,8 @@
         // Aplly default settings for missing settings
         var settings = $.extend({
             // Behaviour
-            loadingCount:200,  		// Loaded rows at each loading (int)
-            allLoadingCount:1000,  	// Loaded rows at each loading when all rows are loaded (int) 
+            loadingCount:200,       // Loaded rows at each loading (int)
+            allLoadingCount:1000,   // Loaded rows at each loading when all rows are loaded (int) 
             loadingMargin:500,      // Margin before a new loading in pixels (int)
             onLoad:null,            // Called function after each loading (function)
             onComplete:null,        // Called function when array is complete (function)
@@ -29,7 +29,7 @@
             operationsChecker:null, // Called function to check each operations (function)
             
             // AJAX
-            postParameters:{}, 	// POST parameters send to JSON flow (map)
+            postParameters:{},     // POST parameters send to JSON flow (map)
             
             // Style
             arrayWidth:null,        // Array width in pixels or % (string)
@@ -46,7 +46,7 @@
             isAllRowsSelectable:false,  // Enable selection on all rows ? (bool)
             isMultipleSelection:false,  // Enable multiple selection ? (bool)
             isSelectionOnClick:true,    // Enable selection on click ? (bool)
-            isSelectionOnKeyboard:true,	// Enable selection on keyboard ?
+            isSelectionOnKeyboard:true,    // Enable selection on keyboard ?
             
             // Sort
             isSortableColumns:false, // Enable sort on columns ? (bool)
@@ -55,7 +55,7 @@
             defaultSortOrder:null,   // Default sort order, "asc" or "desc" (string)
             
             // Messages
-            loadingMessage:'Loading...',	// Loading message (string)
+            loadingMessage:'Loading...',    // Loading message (string)
             noDataMessage:'No data',        // No data message (string)
             sortByMessage:'Sort by',        // Sort by message (string)
         }, settings);
