@@ -1,0 +1,35 @@
+/* Loading message */
+.infinite-array-loading {
+	width:200px;
+	padding:5px;
+	text-align:center;
+	background-color:#CCCCCC;
+}
+
+/* Sorted columns */
+.infinite-array-sortable {
+	cursor:pointer;
+}
+.infinite-array-sorted-asc, .infinite-array-sorted-desc {
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+.infinite-array-sorted-asc {
+	background-image: url('jquery.infiniteArray/fugue/arrow-270.png');
+}
+.infinite-array-sorted-desc {
+	background-image: url('jquery.infiniteArray/fugue/arrow-090.png');
+}
+
+/* Clickable rows */
+.infinite-array-clickable {
+	cursor:pointer;
+}
+.infinite-array-clickable:hover {
+	background-color:#EEEEEE;
+}
+
+/* Selected rows  */
+.infinite-array-selected, .infinite-array-selected:hover {
+	background-color:#CCCCCC;
+}

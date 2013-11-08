@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="../js/jquery.infiniteArray.js"></script>
+		<link rel="stylesheet" type="text/css" href="../js/jquery.infiniteArray.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+				infiniteArray = $('#array').infiniteArray('data.php',{
+					columnsWidths:[
+						'150px',
+						'150px',
+						'150px',
+						'50px',
+						'200px',
+						'80px',
+						'100px',
+						'100px',
+						'100px',
+						'80px'
+					],
+					isSelectableRows:true,
+					isMultipleSelection:false,
+					isSelectionInputs:true,
+					isSortableColumns:true
+				});
+				infiniteArray.listen('name',$('input[name="name"]'));
+			});
+		</script>
+	</head>
+	<body>
+		<p><b>Name :</b> <input type="text" name="name" /></p>
+		<div id="array"></div>
+	</body>
+</html>
