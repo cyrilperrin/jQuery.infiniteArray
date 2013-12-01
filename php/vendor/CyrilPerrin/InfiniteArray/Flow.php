@@ -62,12 +62,10 @@ class Flow
             $this->_dataLoader->load();
 
             // Construct data
-            $data = array('head' => $this->_dataLoader->getHead());
-            if ($body = $this->_dataLoader->getBody()) {
-                $data['body'] = $body;
-            } else {
-                $data['body'] = array();
-            }
+            $data = array(
+                'head' => $this->_dataLoader->getHead(),
+                'body' => $this->_dataLoader->getBody()
+            );
             if ($info = $this->_dataLoader->getInfo()) {
                 $data['info'] = $info;
             }

@@ -44,7 +44,6 @@ class DataLoader_CSV extends CyrilPerrin\InfiniteArray\DataLoader_Abstract
     public function load()
     {
         // Read data
-        $this->_body = array();
         $fp = fopen($this->_path, 'r');
         while ($line = fgetcsv($fp)) {
             if ($this->_filter == null || call_user_func($this->_filter, $line)) {

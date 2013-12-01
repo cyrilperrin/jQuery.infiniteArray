@@ -20,7 +20,7 @@ abstract class DataLoader_Abstract implements DataLoader_Interface
     protected $_sortOrder = null;
 
     /** @var array $_body body */
-    protected $_body;
+    protected $_body = array();
 
     /** @var array $_info info */
     protected $_info;
