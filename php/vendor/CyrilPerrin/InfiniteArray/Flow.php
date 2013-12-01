@@ -51,9 +51,9 @@ class Flow
             array_key_exists('sortOrder', $_POST) && 
             $_POST['sortIndex'] !== null && $_POST['sortOrder'] !== null) {
                 if (preg_match('/^[0-9]+$/', $_POST['sortIndex']) &&
-                in_array(strtoupper($_POST['sortOrder']), array('ASC','DESC'))) {
+                in_array(strtolower($_POST['sortOrder']), array('asc','desc'))) {
                     $this->_dataLoader->setSort(
-                        $_POST['sortIndex'], $_POST['sortOrder']
+                        $_POST['sortIndex'], strtolower($_POST['sortOrder'])
                     );
                 }
             }

@@ -53,8 +53,7 @@ class DataLoader_CSV extends CyrilPerrin\InfiniteArray\DataLoader_Abstract
         fclose($fp);
         
         // Sort data
-        if ($this->_sortIndex !== null && $this->_sortOrder !== null &&
-        in_array($this->_sortOrder, array('asc','desc'))) {
+        if ($this->_sortIndex !== null && $this->_sortOrder !== null) {
             $sortIndex = $this->_sortIndex;
             $sortOrder = $this->_sortOrder;
             usort(
