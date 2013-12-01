@@ -23,7 +23,7 @@ abstract class DataLoader_Abstract implements DataLoader_Interface
     protected $_body = array();
 
     /** @var array $_info info */
-    protected $_info;
+    protected $_info = array();
 
     /**
      * @see DataLoader_Interface#setRange(int,int)
